@@ -1,0 +1,71 @@
+@use '../../assets/styles/default' as *;
+
+header {
+  position: sticky;
+  top: 0;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  border-bottom: 1px solid #EEE;
+
+  .code-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: $text-color;
+
+    span {
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+    }
+
+    &:hover {
+      .code {
+        transform: scale(1.05);
+        transition: all 0.2s ease-in;
+        color: $salmon-200;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: 4rem;
+      list-style: none;
+
+      li {
+        font-size: 1.6rem;
+        display: inline-block;
+        cursor: pointer;
+        transition: transform 0.2s ease-in;
+
+        a {
+          transition: color 0.2s ease-in;
+          text-decoration: none;
+          color: $text-color;
+        }
+
+        &:hover {
+          transform: scale(1.015);
+          a {
+            color: $salmon-200;
+          }
+        }
+      }
+    }
+  }
+
+  .toggle-theme {
+    cursor: pointer;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+      color: #E1C30B;
+    }
+  }
+}
