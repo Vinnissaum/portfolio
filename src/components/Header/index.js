@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Code, Moon } from 'phosphor-react';
+import { Code, Moon, Sun } from 'phosphor-react';
 
 import styles from './Header.module.scss';
 
@@ -13,7 +13,7 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link to="/about">Sobre</Link>
+            <Link to="/">Sobre</Link>
           </li>
           <li>
             <Link to="/stack">Tecnologias</Link>
@@ -28,6 +28,7 @@ export default function Header() {
       </nav>
       <div className={styles['toggle-theme']}>
         <Moon size={24} weight="duotone" />
+        <Sun size={24} weight="duotone" />
       </div>
     </header>
   );

@@ -1,8 +1,10 @@
 .container {
   width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: auto;
   padding: 1.5rem;
-  margin-top: 3rem;
-  background-color: #f00;
+  margin-top: 5.5rem;
+
+  display: flex;
+  align-self: center;
 }

@@ -4,6 +4,7 @@ import '../../assets/styles/global.scss';
 import Header from '../Header';
 import Routes from '../../routes';
 import styles from './App.module.scss';
+import Footer from '../Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <div className={styles.container}>
           <Routes />
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );
