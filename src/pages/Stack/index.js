@@ -8,11 +8,11 @@ export default function Stack() {
         {stackIcons.map(({ name, icon, color }) => (
           <div
             key={name}
-            style={{ opacity: 1, color }}
+            style={{ color, opacity: 1 }}
             className={styles.stackIcon}
           >
             {icon}
-            <span>
+            <span className="text-color">
               {name}
             </span>
           </div>

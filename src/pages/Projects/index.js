@@ -1,7 +1,9 @@
-// import styles from './Projects.module.scss';
+import styles from './Projects.module.scss';
 
 export default function Projects() {
   return (
-    'My Projects'
+    <div className={styles.container}>
+      SASAKAMAR
+    </div>
   );
 }
