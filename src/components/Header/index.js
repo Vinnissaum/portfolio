@@ -5,11 +5,11 @@ import styles from './Header.module.scss';
 
 export default function Header() {
   return (
-    <header className="background text">
-      <a href="/" className={styles['code-icon']}>
+    <header className={`${styles.header} background text`}>
+      <Link to="/" className={styles['code-icon']}>
         <Code size={24} weight="bold" className={styles.code} />
         <span>Vinicius Braz</span>
-      </a>
+      </Link>
       <nav>
         <ul>
           <li>
@@ -20,6 +20,9 @@ export default function Header() {
           </li>
           <li>
             <Link to="/projects">Projetos</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contato</Link>
           </li>
         </ul>
       </nav>
