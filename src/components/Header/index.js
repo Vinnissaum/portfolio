@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Code, Moon } from 'phosphor-react';
 
 import styles from './Header.module.scss';
@@ -12,13 +13,13 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <a href="/">Sobre</a>
+            <Link to="/about">Sobre</Link>
           </li>
           <li>
-            <a href="/">Tecnologias</a>
+            <Link to="/stack">Tecnologias</Link>
           </li>
           <li>
-            <a href="/">Projetos</a>
+            <Link to="/projects">Projetos</Link>
           </li>
         </ul>
       </nav>
