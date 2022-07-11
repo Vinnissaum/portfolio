@@ -1,0 +1,81 @@
+@use '../../assets/styles/default' as *;
+
+.cardSection {
+  margin: 0 auto;
+  height: 100%;
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem;
+  }
+}
+
+.cardContainer {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 250px;
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  flex-flow: column;
+}
+
+.card {
+  padding: 2rem 1rem;
+  scroll-snap-align: start;
+  display: flex;
+
+  .cardInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+
+    h2 {
+      font-size: 2.4rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+
+    .cardTechContainer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .cardTech {
+      background-color: $gray-700;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 1rem 1.4rem;
+      border-radius: 8px;
+      display: flex;
+      color: $gray-100;
+    }
+
+    a {
+      width: 110px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      background-color: $primary-400;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #FFF;
+      padding: 1rem 1.4rem;
+
+      &:hover {
+        background-color: $primary-700;
+      }
+    }
+  }
+
+  img {
+    width: 420px;
+    height: 210px;
+    border-radius: 12px;
+  }
+}

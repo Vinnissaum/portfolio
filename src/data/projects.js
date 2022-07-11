@@ -7,11 +7,18 @@ import photoGallery from '../assets/images/photo-gallery.png';
 
 export default [
   {
-    name: 'IMC calculator',
-    description: 'Calculate the ideal weight according to world health organization, project made based on B7Web\'s React course',
-    repository: 'https://github.com/Vinnissaum/react-imc-calc',
-    screenshot: imc,
-    technologies: ['React', 'TypeScript', 'TailwindCSS'],
+    name: 'Tesla UI Clone',
+    description: 'Project done based on a video by Rocketseat for study purpose.',
+    repository: 'https://github.com/Vinnissaum/tesla-ui-clone',
+    screenshot: teslaUiClone,
+    technologies: ['React', 'TypeScript', 'Styled Components'],
+  },
+  {
+    name: 'Photo Gallery',
+    description: 'Photo Gallery made based on B7Web\'s React course.',
+    repository: 'https://github.com/Vinnissaum/react-gallery',
+    screenshot: photoGallery,
+    technologies: ['React', 'TypeScript', 'Firebase', 'Styled Components'],
   },
   {
     name: 'Star Wars Matching Game',
@@ -21,18 +28,11 @@ export default [
     technologies: ['React', 'TypeScript', 'Styled Components'],
   },
   {
-    name: 'Tesla UI Clone',
-    description: 'Project done based on a video by Rocketseat for study purpose.',
-    repository: 'https://github.com/Vinnissaum/tesla-ui-clone',
-    screenshot: teslaUiClone,
-    technologies: ['React', 'TypeScript', 'Styled Components'],
-  },
-  {
-    name: 'To-Do List',
-    description: 'Project made based on B7Web\'s React course.',
-    repository: 'https://github.com/Vinnissaum/react-todolist',
-    screenshot: todoList,
-    technologies: ['React', 'TypeScript', 'Styled Components'],
+    name: 'IMC calculator',
+    description: 'Calculate the ideal weight according to world health organization, project made based on B7Web\'s React course',
+    repository: 'https://github.com/Vinnissaum/react-imc-calc',
+    screenshot: imc,
+    technologies: ['React', 'TypeScript', 'TailwindCSS'],
   },
   {
     name: 'Finance Control System',
@@ -42,10 +42,10 @@ export default [
     technologies: ['React', 'TypeScript', 'Styled Components'],
   },
   {
-    name: 'Photo Gallery',
-    description: 'Photo Gallery made based on B7Web\'s React course.',
-    repository: 'https://github.com/Vinnissaum/react-gallery',
-    screenshot: photoGallery,
-    technologies: ['React', 'TypeScript', 'Firebase', 'Styled Components'],
+    name: 'To-Do List',
+    description: 'Project made based on B7Web\'s React course.',
+    repository: 'https://github.com/Vinnissaum/react-todolist',
+    screenshot: todoList,
+    technologies: ['React', 'TypeScript', 'Styled Components'],
   },
 ];

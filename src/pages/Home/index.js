@@ -18,7 +18,7 @@ export default function Home() {
         </h1>
         <h2>Desenvolvedor Front-End</h2>
       </header>
-      <p className={styles.info}>
+      <div className={styles.info}>
         Fala ae, sou o Vinicius! Também conhecido como Vinissaum.
         <p>
           Um desenvolvedor Front-End e por incrível que possa parecer, aluno de
@@ -30,7 +30,7 @@ export default function Home() {
           {' '}
           <i>Open to work!</i>
         </p>
-      </p>
+      </div>
     </div>
   );
 }

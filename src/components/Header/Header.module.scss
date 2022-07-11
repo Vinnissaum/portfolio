@@ -28,7 +28,7 @@
       .code {
         transform: scale(1.05);
         transition: all 0.2s ease-in;
-        color: $salmon-200;
+        color: $primary-700;
       }
     }
   }
@@ -54,7 +54,7 @@
         &:hover {
           transform: scale(1.015);
           a {
-            color: $salmon-200;
+            color: $primary-700;
           }
         }
       }
