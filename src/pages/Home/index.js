@@ -16,18 +16,18 @@ export default function Home() {
           {text}
           <Cursor />
         </h1>
-        <h2>Desenvolvedor Front-End</h2>
+        <h2>Front-End developer</h2>
       </header>
       <div className={styles.line} />
       <div className={`${styles.info} text`}>
-        Fala ae, sou o Vinicius! Também conhecido como Vinissaum.
+        Hey 👋, I&apos;m Vinicius! a.k.a Vinissaum.
         <p>
           Um desenvolvedor Front-End e por incrível que possa parecer, aluno de
           Engenharia Mecânica, atualmente cursando o 8º semestre.
         </p>
         <p>
-          Apesar desse contratempo com a faculdade agora o foco é me tornar um
-          grande desenvolvedor, dando um passo de cada vez. Atualmente
+          Despite this setback with college now my focus is on becoming a great
+          developer, taking one step at a time. Currently
           {' '}
           <i>Open to work!</i>
         </p>

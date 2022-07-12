@@ -34,6 +34,7 @@
   padding: 2rem 1rem;
   scroll-snap-align: start;
   display: flex;
+  justify-content: space-between;
 
   .cardInfo {
     display: flex;
@@ -79,7 +80,7 @@
       text-align: center;
       font-size: 1.5rem;
       font-weight: bold;
-      background-color: $primary-200;
+      background-color: $primary-400;
       border-radius: 8px;
       text-decoration: none;
       color: #FFF;
@@ -87,14 +88,14 @@
       transition: all 0.2s ease-in;
 
       &:hover {
-        background-color: $primary-400;
+        background-color: $primary-500;
         transform: translateY(-2px);
       }
     }
   }
 
   img {
-    width: 420px;
+    width: 373px;
     height: 210px;
     border-radius: 12px;
   }
