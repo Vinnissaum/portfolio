@@ -18,12 +18,6 @@
     text-decoration: none;
     transition: all 0.2s ease-in;
 
-    span {
-      font-size: 1.2rem;
-      font-weight: bold;
-      letter-spacing: 0.2rem;
-    }
-
     &:hover {
       color: $primary-200;
 

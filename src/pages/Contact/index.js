@@ -16,26 +16,39 @@ export default function Contact() {
   ];
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} text`}>
       <h1>Contact me</h1>
       <div className={styles.line} />
-      <p>Get in touch!</p>
-      <div className={styles.iconsContainer}>
-        {ContactWays.map(({
-          name, path, icon, color,
-        }) => (
+      <div className={styles.contactSection}>
+        <p>
+          Mail me at
+          {' '}
           <a
-            key={name}
-            className={styles.icon}
-            href={path}
+            href="mailto:vinicius_lsb@live.com"
             target="_blank"
-            style={{ color }}
             rel="noreferrer"
           >
-            {icon}
-            <span>{name}</span>
+            vinicius_lsb@live.com
           </a>
-        ))}
+        </p>
+        <p>Or get in touch!</p>
+        <div className={styles.iconsContainer}>
+          {ContactWays.map(({
+            name, path, icon, color,
+          }) => (
+            <a
+              key={name}
+              className={styles.icon}
+              href={path}
+              target="_blank"
+              style={{ color }}
+              rel="noreferrer"
+            >
+              {icon}
+              <span className="text">{name}</span>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -12,9 +12,6 @@ export default function Header() {
     <header className={`${styles.header} background text`}>
       <Link to="/" className={`${styles['code-icon']} text`}>
         <Terminal size={36} weight="bold" className={styles.code} />
-        <span>
-          Vinicius Braz
-        </span>
       </Link>
       <nav>
         <ul>
