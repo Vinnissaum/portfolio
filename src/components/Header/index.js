@@ -1,34 +1,41 @@
 import { Link } from 'react-router-dom';
-import { Code, Moon, Sun } from 'phosphor-react';
+import { Terminal, Moon, Sun } from 'phosphor-react';
+import { useContext } from 'react';
 
+import { ThemeContext } from '../../context/ThemeContext';
 import styles from './Header.module.scss';
 
 export default function Header() {
+  const { theme, onToggleTheme } = useContext(ThemeContext);
+
   return (
     <header className={`${styles.header} background text`}>
-      <Link to="/" className={styles['code-icon']}>
-        <Code size={24} weight="bold" className={styles.code} />
-        <span>Vinicius Braz</span>
+      <Link to="/" className={`${styles['code-icon']} text`}>
+        <Terminal size={36} weight="bold" className={styles.code} />
+        <span>
+          Vinicius Braz
+        </span>
       </Link>
       <nav>
         <ul>
           <li>
-            <Link to="/">Sobre</Link>
+            <Link to="/" className="text">About</Link>
           </li>
           <li>
-            <Link to="/stack">Tecnologias</Link>
+            <Link to="/stack" className="text">Skills</Link>
           </li>
           <li>
-            <Link to="/projects">Projetos</Link>
+            <Link to="/projects" className="text">Projects</Link>
           </li>
           <li>
-            <Link to="/contact">Contato</Link>
+            <Link to="/contact" className="text">Contact</Link>
           </li>
         </ul>
       </nav>
       <div className={styles['toggle-theme']}>
-        <Moon size={24} weight="duotone" />
-        <Sun size={24} weight="duotone" />
+        {theme === 'dark'
+          ? <Moon size={24} weight="duotone" onClick={onToggleTheme} />
+          : <Sun size={24} weight="duotone" onClick={onToggleTheme} />}
       </div>
     </header>
   );

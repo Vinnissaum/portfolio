@@ -1,7 +1,7 @@
 import { Switch, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
-import Stack from './pages/Stack';
+import Stack from './pages/Skills';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 

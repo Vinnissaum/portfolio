@@ -1,0 +1,54 @@
+@use '../../assets/styles/default.scss' as *;
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    padding: 1rem;
+  }
+
+  .line {
+    width: 80%;
+    border-radius: 4px;
+    margin: 0 auto 5rem;
+    height: 5px;
+    background: $primary-400;
+  }
+
+  .iconsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 5rem;
+    padding: 1.5rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      transform: translateY(-4px);
+
+      span {
+        opacity: 1;
+      }
+    }
+
+    span {
+      font-size: 1.2rem;
+      padding: 0.5rem;
+      color: #000000;
+      opacity: 0.7;
+      transition: all 0.2s ease-in;
+    }
+  }
+
+}

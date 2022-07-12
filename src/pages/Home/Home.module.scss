@@ -1,5 +1,7 @@
+@use '../../assets/styles/default.scss' as *;
+
 .container {
-  margin-top: 6rem;
+  margin: 6rem auto;
   header {
     h1 {
       font-size: 5em;
@@ -8,6 +10,14 @@
     h2 {
       font-size: 3em;
     }
+  }
+
+  .line {
+    width: 100%;
+    border-radius: 4px;
+    margin: 1rem 0 3rem 0;
+    height: 5px;
+    background: $primary-400;
   }
 
   .info {

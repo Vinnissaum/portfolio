@@ -11,14 +11,15 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <header className={styles.header}>
+      <header className={`${styles.header} text`}>
         <h1>
           {text}
           <Cursor />
         </h1>
         <h2>Desenvolvedor Front-End</h2>
       </header>
-      <div className={styles.info}>
+      <div className={styles.line} />
+      <div className={`${styles.info} text`}>
         Fala ae, sou o Vinicius! Também conhecido como Vinissaum.
         <p>
           Um desenvolvedor Front-End e por incrível que possa parecer, aluno de

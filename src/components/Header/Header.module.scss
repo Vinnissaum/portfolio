@@ -13,22 +13,22 @@
 
   .code-icon {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: $text-color;
+    transition: all 0.2s ease-in;
 
     span {
       font-size: 1.2rem;
+      font-weight: bold;
       letter-spacing: 0.2rem;
     }
 
     &:hover {
+      color: $primary-200;
+
       .code {
         transform: scale(1.05);
-        transition: all 0.2s ease-in;
-        color: $primary-700;
       }
     }
   }
@@ -46,15 +46,14 @@
         transition: transform 0.2s ease-in;
 
         a {
-          transition: color 0.2s ease-in;
+          transition: all 0.2s ease-in;
           text-decoration: none;
-          color: $text-color;
         }
 
         &:hover {
           transform: scale(1.015);
           a {
-            color: $primary-700;
+            color: $primary-200;
           }
         }
       }

@@ -1,11 +1,13 @@
+import { ArrowSquareOut } from 'phosphor-react';
+
 import styles from './Projects.module.scss';
 import projects from '../../data/projects';
 
 export default function Projects() {
   return (
-    <div className={styles.cardSection}>
+    <div className={`${styles.cardSection} text`}>
       <h1>Projects</h1>
-      <div className={styles.section} />
+      <div className={styles.line} />
       <div className={styles.cardContainer}>
         {projects.map(({
           name, description, technologies, screenshot, repository,
@@ -19,7 +21,10 @@ export default function Projects() {
                   <div key={tech + Math.random()} className={styles.cardTech}>{tech}</div>
                 ))}
               </div>
-              <a href={repository} target="_blank" rel="noreferrer">Repository</a>
+              <a href={repository} target="_blank" rel="noreferrer">
+                <span>Repository</span>
+                <ArrowSquareOut size={16} weight="bold" />
+              </a>
             </div>
             <img src={screenshot} alt={name} />
           </div>

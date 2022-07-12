@@ -7,7 +7,16 @@
   h1 {
     font-size: 3rem;
     text-align: center;
-    padding: 3rem;
+    letter-spacing: 0.3rem;
+    padding: 1rem;
+  }
+
+  .line {
+    width: 80%;
+    border-radius: 4px;
+    margin: 0 auto 5rem;
+    height: 5px;
+    background: $primary-400;
   }
 }
 
@@ -54,21 +63,32 @@
       border-radius: 8px;
       display: flex;
       color: $gray-100;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
     }
 
     a {
-      width: 110px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 140px;
+      gap: 1rem;
       text-align: center;
       font-size: 1.5rem;
       font-weight: bold;
-      background-color: $primary-400;
+      background-color: $primary-200;
       border-radius: 8px;
       text-decoration: none;
       color: #FFF;
       padding: 1rem 1.4rem;
+      transition: all 0.2s ease-in;
 
       &:hover {
-        background-color: $primary-700;
+        background-color: $primary-400;
+        transform: translateY(-2px);
       }
     }
   }
