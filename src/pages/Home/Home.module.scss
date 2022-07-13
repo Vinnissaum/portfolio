@@ -1,14 +1,13 @@
 @use '../../assets/styles/default.scss' as *;
 
 .container {
-  margin: 6rem auto;
   header {
     h1 {
       font-size: 5em;
       margin-bottom: 4rem;
     }
     h2 {
-      font-size: 3em;
+      font-size: 2.8em;
     }
   }
 
@@ -18,12 +17,19 @@
     margin: 1rem 0 3rem 0;
     height: 5px;
     background: $primary-400;
+    box-shadow: $box-shadow;
   }
 
   .info {
     margin-top: 4rem;
     font-size: 1.6rem;
     letter-spacing: 0.05rem;
+
+    span {
+      color: $primary-400;
+      font-weight: bold;
+    }
+
     p {
       margin-top: 2rem;
     }

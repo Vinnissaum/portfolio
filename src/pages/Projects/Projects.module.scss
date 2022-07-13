@@ -1,8 +1,8 @@
 @use '../../assets/styles/default' as *;
 
 .cardSection {
+  width: 100%;
   margin: 0 auto;
-  height: 100%;
 
   h1 {
     font-size: 3rem;
@@ -17,6 +17,7 @@
     margin: 0 auto 5rem;
     height: 5px;
     background: $primary-400;
+    box-shadow: $box-shadow;
   }
 }
 

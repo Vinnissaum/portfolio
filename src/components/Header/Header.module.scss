@@ -2,8 +2,10 @@
 
 .header {
   background-color: #FFF;
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   height: 5.5rem;
   display: flex;
   justify-content: space-between;
@@ -38,6 +40,10 @@
         display: inline-block;
         cursor: pointer;
         transition: transform 0.2s ease-in;
+
+        .activeLink {
+          color: $primary-200;
+        }
 
         a {
           transition: all 0.2s ease-in;

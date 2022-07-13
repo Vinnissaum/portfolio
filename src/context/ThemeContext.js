@@ -21,7 +21,9 @@ export function ThemeProvider({ children }) {
       value={themeState}
     >
       <div className={theme}>
-        {children}
+        <div className="background">
+          {children}
+        </div>
       </div>
     </ThemeContext.Provider>
   );

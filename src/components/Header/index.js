@@ -1,12 +1,24 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Terminal, Moon, Sun } from 'phosphor-react';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 
 import { ThemeContext } from '../../context/ThemeContext';
 import styles from './Header.module.scss';
 
 export default function Header() {
   const { theme, onToggleTheme } = useContext(ThemeContext);
+  const { pathname } = useLocation();
+
+  function getElementByHref(path) {
+    [...document.querySelectorAll('a')]
+      .forEach((a) => (a.getAttribute('href') === path
+        ? a.classList.add(styles.activeLink)
+        : a.classList.remove(styles.activeLink)));
+  }
+
+  useEffect(() => {
+    getElementByHref(pathname);
+  }, [pathname]);
 
   return (
     <header className={`${styles.header} background text`}>

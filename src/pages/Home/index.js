@@ -20,10 +20,14 @@ export default function Home() {
       </header>
       <div className={styles.line} />
       <div className={`${styles.info} text`}>
-        Hey 👋, I&apos;m Vinicius! a.k.a Vinissaum.
+        Hey 👋,
+        {' '}
+        <span>I&apos;m Vinicius!</span>
+        {' '}
+        a.k.a Vinissaum.
         <p>
-          Um desenvolvedor Front-End e por incrível que possa parecer, aluno de
-          Engenharia Mecânica, atualmente cursando o 8º semestre.
+          A Front-End developer and as incredible as it may seem, a mechanical
+          engineering student, currently in the 8th period.
         </p>
         <p>
           Despite this setback with college now my focus is on becoming a great
