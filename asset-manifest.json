@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.2e7661b7.css",
+    "main.js": "/portfolio/static/js/main.f3b9c6ef.js",
+    "static/media/tesla-ui-clone.png": "/portfolio/static/media/tesla-ui-clone.7987fe42dff0041fcb6e.png",
+    "static/media/vinicius.png": "/portfolio/static/media/vinicius.5f0ae0e5011a8910218d.png",
+    "static/media/star-wars.png": "/portfolio/static/media/star-wars.706a464439badc7db5a2.png",
+    "static/media/imc-calc.png": "/portfolio/static/media/imc-calc.4f620f6ec38ba31cadc8.png",
+    "static/media/photo-gallery.png": "/portfolio/static/media/photo-gallery.be9092f4504d4006461f.png",
+    "static/media/finance-control.png": "/portfolio/static/media/finance-control.33bfbe586279a0ea9d58.png",
+    "static/media/todo-list.png": "/portfolio/static/media/todo-list.048b7118b7baf098070f.png",
+    "index.html": "/portfolio/index.html",
+    "main.2e7661b7.css.map": "/portfolio/static/css/main.2e7661b7.css.map",
+    "main.f3b9c6ef.js.map": "/portfolio/static/js/main.f3b9c6ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e7661b7.css",
+    "static/js/main.f3b9c6ef.js"
+  ]
+}
