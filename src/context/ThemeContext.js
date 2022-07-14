@@ -1,10 +1,12 @@
-import { createContext, useMemo, useState } from 'react';
+import { createContext, useMemo } from 'react';
 import PropTypes from 'prop-types';
+
+import useLocalState from '../hooks/useLocalState';
 
 export const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useLocalState('theme', 'dark');
 
   function handleToggleTheme() {
     setTheme((prevState) => (prevState === 'dark' ? 'light' : 'dark'));
