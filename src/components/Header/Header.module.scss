@@ -77,18 +77,18 @@
     display: flex !important;
   }
   .openedNav {
-    transform: translateY(0);
+    transform: translateY(7rem);
   }
   nav {
     display: flex;
     position: absolute;
     z-index: 1;
-    inset: 7rem 0 0 0;
+    inset: 0;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: calc(100vh - 5.5rem);
-    transform: translateY(-100vh);
+    height: 100vh;
+    transform: translateY(-111.5vh);
 
     ul {
       flex-direction: column;

@@ -3,7 +3,7 @@ import { saveAs } from 'file-saver';
 import { UploadSimple } from 'phosphor-react';
 
 import styles from './Home.module.scss';
-import cv from '../../assets/vinicius.png';
+import cv from '../../assets/images/vinicius.png';
 
 export default function Home() {
   const { text } = useTypewriter({
