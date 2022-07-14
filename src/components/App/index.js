@@ -8,11 +8,11 @@ import Footer from '../Footer';
 function App() {
   return (
     <BrowserRouter>
-      <Header />
       <PageContainer>
+        <Header />
         <Routes />
+        <Footer />
       </PageContainer>
-      <Footer />
     </BrowserRouter>
   );
 }

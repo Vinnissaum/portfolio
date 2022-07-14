@@ -2,16 +2,12 @@
 
 .header {
   background-color: #FFF;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 5.5rem;
+  min-height: 5.5rem;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
-  border-bottom: $border;
+  margin-bottom: 1.5rem;
 
   .code-icon {
     display: flex;
@@ -60,12 +56,50 @@
     }
   }
 
-  .toggle-theme {
+  .toggleIcons {
     cursor: pointer;
     transition: color 0.2s ease-in;
+    display: flex;
+    gap: 2rem;
+  }
 
-    &:hover {
-      color: $primary-200;
+  .toggleMenuNav {
+    display: none;
+  }
+
+  &:hover {
+    color: $primary-200;
+  }
+}
+
+@media (max-width: 450px) {
+  .toggleMenuNav {
+    display: flex !important;
+  }
+  .openedNav {
+    transform: translateY(0);
+  }
+  nav {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    inset: 7rem 0 0 0;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: calc(100vh - 5.5rem);
+    transform: translateY(-100vh);
+
+    ul {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      li {
+        a {
+          font-size: 3rem;
+        }
+      }
     }
   }
 }

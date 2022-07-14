@@ -3,13 +3,12 @@
 .footer {
   width: 100%;
   position: fixed;
+  left: 0;
   bottom: 0;
   height: 5.5rem;
-  border-top: $border;
   padding: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  border-top: $border;
 
   p {
     font-size: 1.2rem;

@@ -24,7 +24,7 @@
 .cardContainer {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  height: 250px;
+  height: 350px;
   display: flex;
   gap: 5rem;
   flex-direction: column;
@@ -96,8 +96,37 @@
   }
 
   img {
-    width: 373px;
-    height: 210px;
+    width: 550px;
+    height: auto;
     border-radius: 12px;
+  }
+}
+
+@media (max-width: 850px) {
+  .cardContainer {
+    width: 100%;
+    max-width: 500px;
+    height: 485px;
+    margin: auto;
+  }
+
+  .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardTechContainer {
+    margin: 1.5rem 0;
+  }
+
+  a {
+    margin-bottom: 1.5rem;
+  }
+
+  img {
+    width: 100% !important;
+    max-width: 480px !important;
+    height: auto!important;
   }
 }
