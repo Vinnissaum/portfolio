@@ -1,6 +1,9 @@
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { saveAs } from 'file-saver';
+import { UploadSimple } from 'phosphor-react';
 
 import styles from './Home.module.scss';
+import cv from '../../assets/vinicius.png';
 
 export default function Home() {
   const { text } = useTypewriter({
@@ -8,6 +11,10 @@ export default function Home() {
     loop: 1,
     typeSpeed: 50,
   });
+
+  function handleDownloadCv() {
+    saveAs(cv, 'vinicius-braz.png');
+  }
 
   return (
     <div className={styles.container}>
@@ -36,6 +43,14 @@ export default function Home() {
           <i>Open to work!</i>
         </p>
       </div>
+      <button
+        className={styles.downloadCv}
+        type="button"
+        onClick={handleDownloadCv}
+      >
+        Download CV
+        <UploadSimple size={16} weight="bold" />
+      </button>
     </div>
   );
 }

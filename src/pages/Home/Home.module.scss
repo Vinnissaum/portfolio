@@ -2,7 +2,7 @@
 
 .container {
   header {
-    margin-top: 10rem;
+    margin-top: 7rem;
     h1 {
       font-size: 5em;
       margin-bottom: 5rem;
@@ -35,4 +35,29 @@
       margin-top: 2rem;
     }
   }
+
+  .downloadCv {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: $primary-400;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #FFF;
+    padding: 1rem 1.4rem;
+    transition: all 0.2s ease-in;
+    border: 0;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primary-500;
+      transform: translateY(-2px);
+    }
+  }
 }
+
