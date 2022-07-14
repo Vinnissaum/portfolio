@@ -16,9 +16,8 @@ Personal portfolio made just for practice.
 
 ## Preview
 
-<img src='./src/assets/images/portfolio.png'/>
-
-<img src='./src/assets/images/portfolio-mobile.png'/>
+<img src='./src/assets/images/portfolio.gif'/>
+<img src='./src/assets/images/portfolio-mobile.gif'/>
 
 ## :rocket: Technologies
 
