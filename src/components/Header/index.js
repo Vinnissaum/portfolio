@@ -1,16 +1,16 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
   Terminal, Moon, Sun, List, X,
 } from 'phosphor-react';
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState, useRef } from 'react';
 
 import { ThemeContext } from '../../context/ThemeContext';
 import styles from './Header.module.scss';
 
 export default function Header() {
   const { theme, onToggleTheme } = useContext(ThemeContext);
+  const navElement = useRef();
   const [toggleMenuNav, setToggleMenuNav] = useState(false);
-  const { pathname } = useLocation();
   const links = [
     { path: '/', text: 'About' },
     { path: '/skills', text: 'Skills' },
@@ -18,42 +18,28 @@ export default function Header() {
     { path: '/contact', text: 'Contact me' },
   ];
 
-  function getElementByHref(path) {
-    [...document.querySelectorAll('a')]
-      .forEach((a) => (a.getAttribute('href') === path
-        ? a.classList.add(styles.activeLink)
-        : a.classList.remove(styles.activeLink)));
-  }
-
   const handleToggleNav = () => {
     setToggleMenuNav(!toggleMenuNav);
-    const nav = document.querySelector('nav');
 
-    if (nav.classList.contains(styles.openedNav)) {
-      nav.classList.remove(styles.openedNav);
-    } else {
-      nav.classList.add(styles.openedNav);
-    }
+    navElement.current.classList.toggle(styles.openedNav, !toggleMenuNav);
   };
-
-  useEffect(() => {
-    getElementByHref(pathname);
-  }, [pathname]);
 
   return (
     <header className={`${styles.header} background text`}>
       <Link to="/" className={`${styles['code-icon']} text`}>
         <Terminal size={36} weight="bold" className={styles.code} />
       </Link>
-      <nav className="background">
+      <nav className="background" ref={navElement}>
 
         <ul>
           {links.map(({ path, text }) => (
             <li key={path}>
               <Link
+                onFocus={({ target }) => target.classList.add(styles.activeLink)}
+                onBlur={({ target }) => target.classList.remove(styles.activeLink)}
                 to={path}
                 className="text"
-                onClick={handleToggleNav}
+                onClick={() => handleToggleNav()}
               >
                 {text}
               </Link>

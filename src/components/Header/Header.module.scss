@@ -61,14 +61,14 @@
     transition: color 0.2s ease-in;
     display: flex;
     gap: 2rem;
+
+    &:hover {
+      color: $primary-200;
+    }
   }
 
   .toggleMenuNav {
     display: none;
-  }
-
-  &:hover {
-    color: $primary-200;
   }
 }
 
