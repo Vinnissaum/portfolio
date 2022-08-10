@@ -10,6 +10,8 @@ import {
   SiTailwindcss,
   SiSass,
   SiNodedotjs,
+  SiJava,
+  SiSpringboot,
   // SiJest,
   SiGit,
 } from 'react-icons/si';
@@ -27,5 +29,7 @@ export default [
   { name: 'Sass', icon: <SiSass size={50} />, color: '#CF649A' },
   { name: 'NodeJS', icon: <SiNodedotjs size={50} />, color: '#116E01' },
   // { name: 'Jest', icon: <SiJest size={50} />, color: '#9A4452' },
+  { name: 'Java', icon: <SiJava size={50} />, color: '#EB2A2B' },
+  { name: 'Springboot', icon: <SiSpringboot size={50} />, color: '#67AA3C' },
   { name: 'Git', icon: <SiGit size={50} />, color: '#F05033' },
 ];
