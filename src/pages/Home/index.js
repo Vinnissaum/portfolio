@@ -3,7 +3,7 @@ import { saveAs } from 'file-saver';
 import { UploadSimple } from 'phosphor-react';
 
 import styles from './Home.module.scss';
-import cv from '../../assets/images/vinicius.png';
+import cv from '../../assets/cv/CurriculoViniciusBraz.pdf';
 
 export default function Home() {
   const { text } = useTypewriter({
@@ -13,7 +13,7 @@ export default function Home() {
   });
 
   function handleDownloadCv() {
-    saveAs(cv, 'vinicius-braz.png');
+    saveAs(cv, 'CurriculoViniciusBraz.pdf');
   }
 
   return (
@@ -23,7 +23,7 @@ export default function Home() {
           {text}
           <Cursor />
         </h1>
-        <h2>Front-End developer</h2>
+        <h2>Back-end developer</h2>
       </header>
       <div className={styles.line} />
       <div className={`${styles.info} text`}>
@@ -33,7 +33,7 @@ export default function Home() {
         {' '}
         a.k.a Vinissaum.
         <p>
-          A Front-End developer and as incredible as it may seem, a mechanical
+          A back-end developer and as incredible as it may seem, a mechanical
           engineering student, currently in the 8th period.
         </p>
         <p>
